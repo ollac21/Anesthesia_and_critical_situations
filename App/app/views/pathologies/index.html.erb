@@ -1,0 +1,8 @@
+
+<%= link_to "Create", '/pathologies/new' %>
+
+<% @pathologies.each do |p| %>
+<%= link_to(pathologie_path(p)) do %> 
+<p> <%= p.name %> </p>
+<%end%>
+<%end%>

@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+p1 = Pathologie.create(name: "Myasthenia Gravis")
+p2 = Pathologie.create(name: "Obesity")
+
+System.create(hemodynamics: "test", pathologie_id: p2.id)
